@@ -8,12 +8,12 @@ def convert():
     if celTempVar.get() != 0.0:
         celToFah = (celTemp * 9 / 5 + 32)
         print(celToFah)
-        fahTempVar.set(celToFah)
+        fahTempVar.set(round(celToFah, 2))
 
     elif fahTempVar.get() != 0.0:
         fahToCel = ((fahTemp - 32) * (5 / 9))
         print(fahToCel)
-        celTempVar.set(fahToCel)
+        celTempVar.set(round(fahToCel, 2))
 
 
 def reset():
